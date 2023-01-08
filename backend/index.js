@@ -1,20 +1,23 @@
-// import express
+//import express
 import express from "express";
-// import cors
+
+//import cors
 import cors from "cors";
-// import routes
+
+//import routes
 import Router from "./routes/routes.js";
- 
-// init express
+
+//init express
 const app = express();
- 
-// use express json
+
+//use express json
 app.use(express.json());
- 
-// use cors
+
+//use cors
 app.use(cors());
- 
-// use router
+
+//use router
 app.use(Router);
- 
-app.listen(3000, () => console.log('Server running at http://localhost:3000'));
+
+//PORT
+app.listen(5000, () => console.log('Server running at http://localhost:5000'));
